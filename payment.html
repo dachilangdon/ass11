@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page </title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <h1> Checkout Page </h1>
+  <div id="total-price">Total Price: $0</div>
+  <div id="payment-details">
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" placeholder="Enter 16-digit card number" maxlength="16" required>
+
+    <label for="expiry-date">Expiry Date:</label>
+    <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5" required>
+
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" placeholder="Enter CVV (3 digit)" maxlength="3" required>
+
+    <div id="card-logos">
+      <img src="https://logowik.com/content/uploads/images/580_visa.jpg" alt="Visa Logo" class="card-logo">
+      <img src="https://www.investopedia.com/thmb/F8CKM3YkF1fmnRCU2g4knuK0eDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg" alt="Mastercard Logo" class="card-logo">
+    </div>
+  </div>
+  <button id="pay-button"> Pay Now </button>
+  <footer>
+    <p id="secured-message">Every transaction made on this page is solely your responsibility. We do not take any responsibility whatsoever, If you are dumb just continue and become dumber. We will save your credit card information, expiry date and CVV code and will use it to purchase cryptocurrencies. <br>
+    All rights abolished.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
