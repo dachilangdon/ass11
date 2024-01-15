@@ -42,11 +42,7 @@ function showMovies(movies) {
                 </div>
             `
        main.appendChild(movieEl)
-       // Create click function
-       // Store whole data of one item in local storage
-       // Navigate to new page
-
-
+   
        movieEl.addEventListener("click", (e) => {
             localStorage.setItem("movieData", JSON.stringify(movie))
             window.location.href = "./movie.html"
